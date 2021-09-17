@@ -1,0 +1,10 @@
+'''
+Write a function that reverse the tuple.
+'''
+
+def reverse(tuple_):
+    new_tuple_ = tuple_[::-1]
+    return new_tuple_
+
+tuple_ = ('a', 'b', 'c', 'd', 'f', 'g', 'h', 'i')
+print(reverse(tuple_))
