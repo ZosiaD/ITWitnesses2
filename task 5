@@ -1,0 +1,30 @@
+'''
+Write a program that lets the user play Rock-Paper-Scissors against
+the computer. There should be three rounds, and after those three rounds,
+your program should print out who won and lost or that there is a tie.
+'''
+
+import random
+for i in range(3):
+    user = input("Enter a choice (rock, paper, scissors): ")
+    possible = ["rock", "paper", "scissors"]
+    computer = random.choice(possible)
+    print(f"\nYou chose {user}, computer chose {computer}.\n")
+
+    if user == computer:
+        print(f"Both players selected {user}. It's a tie!")
+    elif user == "rock":
+        if computer == "scissors":
+            print("Rock smashes scissors! You win!")
+        else:
+            print("Paper covers rock! You lose.")
+    elif user == "paper":
+        if computer == "rock":
+            print("Paper covers rock! You win!")
+        else:
+            print("Scissors cuts paper! You lose.")
+    elif user == "scissors":
+        if computer == "paper":
+            print("Scissors cuts paper! You win!")
+        else:
+            print("Rock smashes scissors! You lose.")
