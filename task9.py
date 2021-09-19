@@ -1,8 +1,8 @@
 x = input('enter zero: ')
-if x == 0:
-    print("true, good job!")
+if x == '0':
+    print("true")
 else:
-    print('false, try again')
+    print('false')
 if x.isdigit():
     print('it is a number')
 else:
