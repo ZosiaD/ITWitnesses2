@@ -4,12 +4,6 @@ each item appearsat most once. For instance, the list
 [1,1,2,3,4,3,0,0] would become [1,2,3,4,0]
 '''
 
-# 1 method
-l = [5, 1, 2, 3, 3, 1, 4, 0]
-print(list(set(l)))
-
-
-# 2 method
 def Remove_repeat(l):
     new_l = []
     for num in l:
