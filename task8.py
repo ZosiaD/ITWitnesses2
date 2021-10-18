@@ -1,3 +1,13 @@
+'''
+Create a function mysort(mylist=[], numflag=False) which sorts and returns 
+the list. By default it should sort alphabetically, but if numflag==True, 
+it should sort numerically. In the main execution portion:
+'''
+
+create a list
+call the function to sort it numerically - print the result
+call the function to sort it alphabetically - print the result
+print "DONE"
 list_a = ['cat', 'dog', 'chicken', 'cow', 'horse']
 list_n = ['3','5','22','13','9']
 
