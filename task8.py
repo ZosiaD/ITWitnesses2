@@ -1,9 +1,14 @@
-def sorting(x):
-    x.sort()
-    print('the list sorted alphabetically and also numerically: ', x)
-    print('done')
+list_a = ['cat', 'dog', 'chicken', 'cow', 'horse']
+list_n = ['3','5','22','13','9']
 
-x = ['3', '2', 'asd', 'bds', 'cde', '1']
-sorting(x)
+def mysort(mylist = [], numflag = False):
+    if numflag == False:
+        mylist.sort(key = lambda x: x[0])
+    else:
+        mylist.sort(key = len)
+    return print(mylist)
 
+mysort(list_a, True)
+mysort(list_n, True)
 
+print('DONE')
